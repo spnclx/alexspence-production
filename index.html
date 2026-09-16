@@ -130,7 +130,19 @@ section{padding:90px 48px}
 .shorts-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:16px}
 .shorts-item{position:relative;aspect-ratio:9/16;background:var(--bg2);overflow:hidden;border:1px solid var(--border);transition:border-color 0.4s}
 .shorts-item:hover{border-color:#555}
-.shorts-item iframe{position:absolute;inset:0;width:100%;height:100%}
+.shorts-item iframe,.work-item iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.yt{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:var(--bg2);cursor:pointer;color:#fff;font:inherit;text-align:left;display:block}
+.yt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 0.5s}
+.yt::after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.05) 45%,rgba(0,0,0,0.7))}
+.yt:hover img{transform:scale(1.03)}
+.yt-title{position:absolute;left:20px;right:20px;bottom:16px;z-index:1;font-family:var(--font-display);font-size:15px;font-weight:500;line-height:1.35;color:#fff;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.yt-play{position:absolute;top:50%;left:50%;z-index:1;width:60px;height:60px;margin:-30px 0 0 -30px;border-radius:50%;background:#fff;color:#000;box-shadow:0 6px 24px rgba(0,0,0,0.35);display:flex;align-items:center;justify-content:center;transition:background 0.3s,transform 0.3s}
+.yt-play svg{width:22px;height:22px;margin-left:3px}
+.yt:hover .yt-play{background:#ddd;transform:scale(1.08)}
+.yt:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+.shorts-item .yt-play{width:48px;height:48px;margin:-24px 0 0 -24px}
+.shorts-item .yt-play svg{width:18px;height:18px}
+.shorts-item .yt::after{background:linear-gradient(transparent 70%,rgba(0,0,0,0.35))}
 .work-disclaimer{font-size:12px;line-height:1.6;color:var(--text2);font-weight:300;letter-spacing:0.02em;margin-top:28px}
 
 .photo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:48px}
@@ -333,23 +345,23 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <div class="section-label reveal">Portfolio</div>
 <div class="section-title reveal">New Tech Machinery</div>
 <div class="work-grid">
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/aXzgGqnqh_Q" title="How Riley Hays Cut Lead Times by 75 Percent with NTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="aXzgGqnqh_Q" data-title="How Riley Hays Cut Lead Times by 75 Percent with NTM" aria-label="Play video: How Riley Hays Cut Lead Times by 75 Percent with NTM"><img src="https://i.ytimg.com/vi_webp/aXzgGqnqh_Q/hq720.webp" data-fallback="https://i.ytimg.com/vi/aXzgGqnqh_Q/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">How Riley Hays Cut Lead Times by 75 Percent with NTM</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/HchKtgpqgik" title="The Ultimate Portable Rollforming Day: 6 Jobs, 14 Hours, One Epic Ride" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="HchKtgpqgik" data-title="The Ultimate Portable Rollforming Day: 6 Jobs, 14 Hours, One Epic Ride" aria-label="Play video: The Ultimate Portable Rollforming Day: 6 Jobs, 14 Hours, One Epic Ride"><img src="https://i.ytimg.com/vi_webp/HchKtgpqgik/hq720.webp" data-fallback="https://i.ytimg.com/vi/HchKtgpqgik/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">The Ultimate Portable Rollforming Day: 6 Jobs, 14 Hours, One Epic Ride</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/dp9mV7yF_1E" title="Cut Your Changeover Times In Half!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="dp9mV7yF_1E" data-title="Cut Your Changeover Times In Half!" aria-label="Play video: Cut Your Changeover Times In Half!"><img src="https://i.ytimg.com/vi_webp/dp9mV7yF_1E/hq720.webp" data-fallback="https://i.ytimg.com/vi/dp9mV7yF_1E/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">Cut Your Changeover Times In Half!</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
 </div>
 <div class="shorts-grid">
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/l65Lk2mpyGw" title="Stop Waiting on Suppliers: Riley&#x27;s 2 Week Solution" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/Zc90e5u-zhg" title="Matte Black Metal Roof Transformation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/PNtGJcAKKSQ" title="Boost Your Efficiency With New Tech Machinery&#x27;s Z-Cutter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/-S8QtucRwuo" title="Metal Roof Manufacturer Reacts To Receiving The 1000th SSQII" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/rC8_sHP8Yjs" title="The Origin Story Of A Top Metal Roof Manufacturer: How It All Began" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="shorts-item reveal"><iframe src="https://www.youtube.com/embed/VVg6n-cKTf0" title="Slogans Of A Top Metal Roofing Manufacturer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="l65Lk2mpyGw" data-title="Stop Waiting on Suppliers: Riley&#x27;s 2 Week Solution" aria-label="Play video: Stop Waiting on Suppliers: Riley&#x27;s 2 Week Solution"><img src="https://i.ytimg.com/vi/l65Lk2mpyGw/oar2.jpg" data-fallback="https://i.ytimg.com/vi/l65Lk2mpyGw/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="Zc90e5u-zhg" data-title="Matte Black Metal Roof Transformation" aria-label="Play video: Matte Black Metal Roof Transformation"><img src="https://i.ytimg.com/vi/Zc90e5u-zhg/oar2.jpg" data-fallback="https://i.ytimg.com/vi/Zc90e5u-zhg/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="PNtGJcAKKSQ" data-title="Boost Your Efficiency With New Tech Machinery&#x27;s Z-Cutter" aria-label="Play video: Boost Your Efficiency With New Tech Machinery&#x27;s Z-Cutter"><img src="https://i.ytimg.com/vi/PNtGJcAKKSQ/oar2.jpg" data-fallback="https://i.ytimg.com/vi/PNtGJcAKKSQ/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="-S8QtucRwuo" data-title="Metal Roof Manufacturer Reacts To Receiving The 1000th SSQII" aria-label="Play video: Metal Roof Manufacturer Reacts To Receiving The 1000th SSQII"><img src="https://i.ytimg.com/vi/-S8QtucRwuo/oar2.jpg" data-fallback="https://i.ytimg.com/vi/-S8QtucRwuo/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="rC8_sHP8Yjs" data-title="The Origin Story Of A Top Metal Roof Manufacturer: How It All Began" aria-label="Play video: The Origin Story Of A Top Metal Roof Manufacturer: How It All Began"><img src="https://i.ytimg.com/vi/rC8_sHP8Yjs/oar2.jpg" data-fallback="https://i.ytimg.com/vi/rC8_sHP8Yjs/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
+<div class="shorts-item reveal"><button class="yt" type="button" data-yt="VVg6n-cKTf0" data-title="Slogans Of A Top Metal Roofing Manufacturer" aria-label="Play video: Slogans Of A Top Metal Roofing Manufacturer"><img src="https://i.ytimg.com/vi/VVg6n-cKTf0/oar2.jpg" data-fallback="https://i.ytimg.com/vi/VVg6n-cKTf0/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button></div>
 </div>
 <p class="work-disclaimer reveal">Work shown was produced during employment at New Tech Machinery. All rights remain with their respective owners.</p>
 </section>
@@ -357,14 +369,14 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <section id="photos">
 <div class="section-title reveal">MotoCrane</div>
 <div class="work-grid">
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/52uqQoukluc" title="Track Testing with MotoCrane RADICAL and Audi S4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="52uqQoukluc" data-title="Track Testing with MotoCrane RADICAL and Audi S4" aria-label="Play video: Track Testing with MotoCrane RADICAL and Audi S4"><img src="https://i.ytimg.com/vi_webp/52uqQoukluc/hq720.webp" data-fallback="https://i.ytimg.com/vi/52uqQoukluc/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">Track Testing with MotoCrane RADICAL and Audi S4</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/QWzSfXwSb94" title="MotoCrane RADICAL L/S Kit Technical Walkthrough + Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="QWzSfXwSb94" data-title="MotoCrane RADICAL L/S Kit Technical Walkthrough + Setup" aria-label="Play video: MotoCrane RADICAL L/S Kit Technical Walkthrough + Setup"><img src="https://i.ytimg.com/vi_webp/QWzSfXwSb94/hq720.webp" data-fallback="https://i.ytimg.com/vi/QWzSfXwSb94/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">MotoCrane RADICAL L/S Kit Technical Walkthrough + Setup</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
-<div class="work-item reveal" style="position:relative">
-<iframe src="https://www.youtube.com/embed/HSW6Yvnxgjw" title="MotoCrane PSC Technical Walkthrough + Setup" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%"></iframe>
+<div class="work-item reveal">
+<button class="yt" type="button" data-yt="HSW6Yvnxgjw" data-title="MotoCrane PSC Technical Walkthrough + Setup" aria-label="Play video: MotoCrane PSC Technical Walkthrough + Setup"><img src="https://i.ytimg.com/vi_webp/HSW6Yvnxgjw/hq720.webp" data-fallback="https://i.ytimg.com/vi/HSW6Yvnxgjw/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">MotoCrane PSC Technical Walkthrough + Setup</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
 </div>
 </div>
 <div class="photo-grid">
@@ -557,6 +569,27 @@ function setMenu(open){hamburger.classList.toggle('active',open);navLinks.classL
 hamburger.addEventListener('click',()=>setMenu(!navLinks.classList.contains('open')));
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
 document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();var form=this;var btn=form.querySelector('.submit-btn');var status=document.getElementById('formStatus');status.textContent='Sending your message…';btn.textContent='SENDING...';btn.disabled=true;fetch('https://formspree.io/f/meepjzrk',{method:'POST',headers:{'Accept':'application/json','Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()}).then(function(r){if(r.ok){btn.textContent='SENT!';status.textContent='Thanks! Your message was sent.';form.reset();setTimeout(function(){btn.textContent='SEND MESSAGE';btn.disabled=false},3000)}else{btn.textContent='ERROR — TRY AGAIN';status.textContent='Something went wrong. Please try again or email alexspenceproduction@gmail.com.';btn.disabled=false}}).catch(function(){btn.textContent='ERROR — TRY AGAIN';status.textContent='Something went wrong. Please try again or email alexspenceproduction@gmail.com.';btn.disabled=false})});
+
+/* Click-to-play YouTube: show thumbnail first, load the player only when clicked. */
+(function(){
+var warmed=false;
+function warm(){if(warmed)return;warmed=true;['https://www.youtube-nocookie.com','https://www.google.com'].forEach(function(h){var l=document.createElement('link');l.rel='preconnect';l.href=h;document.head.appendChild(l)})}
+document.querySelectorAll('.yt').forEach(function(btn){
+var img=btn.querySelector('img');
+img.addEventListener('error',function(){if(img.dataset.fallback&&img.src!==img.dataset.fallback)img.src=img.dataset.fallback});
+btn.addEventListener('pointerenter',warm);
+btn.addEventListener('focus',warm);
+btn.addEventListener('click',function(){
+var f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+btn.dataset.yt+'?autoplay=1&playsinline=1&rel=0';
+f.title=btn.dataset.title;
+f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+f.allowFullscreen=true;
+btn.replaceWith(f);
+f.focus();
+});
+});
+})();
 
 /* Analytics + cookie consent. Replace GA_ID with your GA4 Measurement ID (e.g. G-ABC123XYZ). GA4 loads only after the visitor accepts. */
 (function(){
