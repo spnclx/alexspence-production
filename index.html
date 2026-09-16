@@ -32,7 +32,7 @@
 "url":"https://alexspenceproduction.com/",
 "image":"https://alexspenceproduction.com/hero-poster.jpg",
 "email":"alexspenceproduction@gmail.com",
-"founder":{"@type":"Person","name":"Alex Spence"},
+"founder":{"@type":"Person","name":"Alex Spence","image":"https://alexspenceproduction.com/alex-spence.jpg","jobTitle":"Storyteller | Videographer | Photographer"},
 "address":{"@type":"PostalAddress","addressLocality":"Denver","addressRegion":"CO","addressCountry":"US"},
 "areaServed":"US",
 "knowsAbout":["Videography","Photography","Construction","Manufacturing","Technology"],
@@ -156,10 +156,17 @@ section{padding:90px 48px}
 .services-list{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:16px;margin-top:40px}
 .service-item{padding:24px;border:1px solid var(--border);border-radius:18px;transition:border-color 0.3s;display:flex;flex-direction:column;justify-content:center}
 .service-item:hover{border-color:#555}
-.service-item h4{font-family:var(--font-display);font-size:14px;font-weight:500;color:#fff;margin-bottom:6px;letter-spacing:0.02em}
-.service-item p{font-size:12px;color:var(--text3);font-weight:300;line-height:1.5;margin-bottom:0}
-.about-visual{display:flex;align-items:center;justify-content:center;min-height:400px}
-.stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:16px;width:100%;max-width:440px}
+.service-item h4{font-family:var(--font-display);font-size:18px;font-weight:600;color:#fff;margin-bottom:6px;letter-spacing:0.01em;line-height:1.3}
+.about-text .service-item p{font-size:14px;color:var(--text2);font-weight:300;line-height:1.5;margin-bottom:0}
+.about-visual{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:400px}
+.about-profile{container-type:inline-size;display:flex;align-items:center;gap:24px;width:100%;max-width:500px;padding:24px 28px;border:1px solid var(--border);border-radius:18px;transition:border-color 0.3s}
+.about-profile:hover{border-color:#555}
+.about-avatar{flex:none;width:112px;height:112px;border-radius:50%;overflow:hidden;border:1px solid var(--border);background:var(--bg3)}
+.about-avatar img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
+.about-profile h4{font-family:var(--font-display);font-size:22px;font-weight:600;color:#fff;line-height:1.2}
+.about-profile p{font-size:11px;color:var(--text3);letter-spacing:0.06em;text-transform:uppercase;margin-top:8px;line-height:1.6;white-space:nowrap}
+@container (max-width:429px){.about-roles .sep{display:none}.about-roles span{display:block}}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:16px;width:100%;max-width:500px}
 .stat-card{padding:32px 28px;border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;justify-content:center;transition:border-color 0.3s}
 .stat-card:hover{border-color:#555}
 .stat-card h5{font-family:var(--font-display);font-size:40px;font-weight:600;color:#fff;line-height:1}
@@ -252,7 +259,8 @@ section{padding:60px 24px}
 .photo-grid{grid-template-columns:repeat(3,1fr)}
 .photo-grid-wide{grid-template-columns:1fr}
 .about-grid{grid-template-columns:1fr;gap:48px}
-.about-visual{min-height:auto}
+.about-visual{display:contents}
+.about-profile{order:-1;max-width:none}
 .stat-grid{max-width:none}
 .contact-grid{grid-template-columns:1fr;gap:48px}
 .form-row{grid-template-columns:1fr}
@@ -406,8 +414,15 @@ footer{flex-direction:column;gap:24px;text-align:center}
 </div>
 </div>
 </div>
-<div class="about-visual reveal">
-<div class="stat-grid">
+<div class="about-visual">
+<div class="about-profile reveal">
+<div class="about-avatar"><img src="alex-spence.jpg" alt="Alex Spence, storyteller, videographer, and photographer" width="320" height="320" loading="lazy"></div>
+<div>
+<h4>Alex Spence</h4>
+<p class="about-roles"><span>Storyteller</span><span class="sep" aria-hidden="true"> | </span><span>Videographer</span><span class="sep" aria-hidden="true"> | </span><span>Photographer</span></p>
+</div>
+</div>
+<div class="stat-grid reveal">
 <div class="stat-card">
 <h5>6+</h5>
 <p>Years</p>
