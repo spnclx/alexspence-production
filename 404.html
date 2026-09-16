@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Alex Spence Production</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e0e0e">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#0e0e0e;--text:#f0f0f0;--text2:#999;--text3:#555;--border:#2a2a2a;
+--font-display:'Outfit',sans-serif;
+--font-body:'DM Sans',sans-serif;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.7;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 24px}
+::selection{background:#fff;color:#000}
+.logo{display:flex;align-items:center;gap:14px;text-decoration:none;margin-bottom:56px}
+.sprocket-col{display:flex;flex-direction:column;gap:3px}
+.sprocket{width:5px;height:4px;background:#fff;border-radius:1px}
+.wordmark{display:flex;flex-direction:column;text-align:left}
+.wordmark span:first-child{font-family:var(--font-display);font-size:20px;font-weight:600;letter-spacing:0.08em;color:#fff}
+.wordmark span:last-child{font-size:9px;letter-spacing:0.44em;color:var(--text2);font-weight:300;margin-top:-2px}
+.code{font-family:var(--font-display);font-size:clamp(88px,20vw,168px);font-weight:600;line-height:1;color:#fff;letter-spacing:0.02em}
+h1{font-family:var(--font-display);font-size:clamp(22px,4vw,30px);font-weight:500;color:#fff;margin-top:16px}
+p{font-size:15px;color:var(--text2);font-weight:300;max-width:420px;margin:12px auto 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:40px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border:1px solid #fff;border-radius:100px;color:#fff;text-decoration:none;font-size:13px;letter-spacing:0.1em;font-weight:400;transition:background 0.3s,color 0.3s,border-color 0.3s}
+.btn:hover{background:#fff;color:#000}
+.btn svg{width:14px;height:14px;transition:transform 0.3s}
+.btn:hover svg{transform:translateX(4px)}
+.btn-quiet{border-color:var(--border);color:var(--text2)}
+.btn-quiet:hover{background:transparent;color:#fff;border-color:#555}
+.btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+</style>
+</head>
+<body>
+<a href="/" class="logo" aria-label="Alex Spence Production home">
+<div class="sprocket-col" aria-hidden="true">
+<div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+<div class="sprocket"></div><div class="sprocket"></div><div class="sprocket"></div>
+</div>
+<div class="wordmark">
+<span>ALEX SPENCE</span>
+<span>PRODUCTION</span>
+</div>
+</a>
+<div class="code" aria-hidden="true">404</div>
+<h1>This shot didn't make the final cut</h1>
+<p>The page you're looking for doesn't exist or has moved.</p>
+<div class="actions">
+<a href="/" class="btn">BACK TO HOME <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<a href="/#contact" class="btn btn-quiet">GET IN TOUCH</a>
+</div>
+</body>
+</html>
