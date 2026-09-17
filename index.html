@@ -169,21 +169,21 @@ section{padding:90px 48px}
 .services-list{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:16px;margin-top:40px}
 .service-item{padding:24px;border:1px solid var(--border);border-radius:18px;transition:border-color 0.3s;display:flex;flex-direction:column;justify-content:center}
 .service-item:hover{border-color:#555}
-.service-item h4{font-family:var(--font-display);font-size:18px;font-weight:600;color:#fff;margin-bottom:6px;letter-spacing:0.01em;line-height:1.3}
+.service-item h3{font-family:var(--font-display);font-size:18px;font-weight:600;color:#fff;margin-bottom:6px;letter-spacing:0.01em;line-height:1.3}
 .about-text .service-item p{font-size:14px;color:var(--text2);font-weight:300;line-height:1.5;margin-bottom:0}
 .about-visual{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;min-height:400px}
 .about-profile{container-type:inline-size;display:flex;align-items:center;gap:24px;width:100%;max-width:500px;padding:24px 28px;border:1px solid var(--border);border-radius:18px;transition:border-color 0.3s}
 .about-profile:hover{border-color:#555}
 .about-avatar{flex:none;width:112px;height:112px;border-radius:50%;overflow:hidden;border:1px solid var(--border);background:var(--bg3)}
 .about-avatar img{display:block;width:100%;height:100%;object-fit:cover;transform:scale(1.06)}
-.about-profile h4{font-family:var(--font-display);font-size:22px;font-weight:600;color:#fff;line-height:1.2}
+.about-profile h3{font-family:var(--font-display);font-size:22px;font-weight:600;color:#fff;line-height:1.2}
 .about-profile p{font-size:11px;color:var(--text3);letter-spacing:0.06em;text-transform:uppercase;margin-top:8px;line-height:1.6;white-space:nowrap}
 @container (max-width:429px){.about-roles .sep{display:none}.about-roles span{display:block}}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:16px;width:100%;max-width:500px}
 .stat-card{padding:32px 28px;border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;justify-content:center;transition:border-color 0.3s}
 .stat-card:hover{border-color:#555}
-.stat-card h5{font-family:var(--font-display);font-size:40px;font-weight:600;color:#fff;line-height:1}
-.stat-card h5.stat-word{font-size:24px;line-height:1.15}
+.stat-card .stat-value{font-family:var(--font-display);font-size:40px;font-weight:600;color:#fff;line-height:1}
+.stat-card .stat-value.stat-word{font-size:24px;line-height:1.15}
 .stat-card p{font-size:11px;color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;margin-top:10px}
 
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}
@@ -204,6 +204,7 @@ section{padding:90px 48px}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .submit-btn{background:#fff;color:#000;border:none;padding:16px 32px;font-family:var(--font-body);font-size:13px;letter-spacing:0.1em;font-weight:500;cursor:pointer;transition:all 0.3s;align-self:flex-start;text-transform:uppercase}
 .form-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.form-note{font-size:11px;letter-spacing:0.06em;color:var(--text3);margin-top:-6px}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .submit-btn:hover{background:#ddd;transform:translateY(-1px)}
 
@@ -344,7 +345,7 @@ footer{flex-direction:column;gap:24px;text-align:center}
 
 <section id="work">
 <div class="section-label reveal">Portfolio</div>
-<div class="section-title reveal">New Tech Machinery</div>
+<h2 class="section-title reveal">New Tech Machinery</h2>
 <div class="work-grid">
 <div class="work-item reveal">
 <button class="yt" type="button" data-yt="aXzgGqnqh_Q" data-title="How Riley Hays Cut Lead Times by 75 Percent with NTM" aria-label="Play video: How Riley Hays Cut Lead Times by 75 Percent with NTM"><img src="https://i.ytimg.com/vi_webp/aXzgGqnqh_Q/hq720.webp" data-fallback="https://i.ytimg.com/vi/aXzgGqnqh_Q/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">How Riley Hays Cut Lead Times by 75 Percent with NTM</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
@@ -368,7 +369,7 @@ footer{flex-direction:column;gap:24px;text-align:center}
 </section>
 
 <section id="photos">
-<div class="section-title reveal">MotoCrane</div>
+<h2 class="section-title reveal">MotoCrane</h2>
 <div class="work-grid">
 <div class="work-item reveal">
 <button class="yt" type="button" data-yt="52uqQoukluc" data-title="Track Testing with MotoCrane RADICAL and Audi S4" aria-label="Play video: Track Testing with MotoCrane RADICAL and Audi S4"><img src="https://i.ytimg.com/vi_webp/52uqQoukluc/hq720.webp" data-fallback="https://i.ytimg.com/vi/52uqQoukluc/hqdefault.jpg" alt="" loading="lazy" decoding="async"><span class="yt-title">Track Testing with MotoCrane RADICAL and Audi S4</span><span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></button>
@@ -391,7 +392,7 @@ footer{flex-direction:column;gap:24px;text-align:center}
 </section>
 
 <section id="taylor-machine">
-<div class="section-title reveal">Taylor Machine INC</div>
+<h2 class="section-title reveal">Taylor Machine INC</h2>
 <div class="photo-grid photo-grid-wide">
 <div class="photo-item reveal"><img src="taylormachine1.webp" alt="Taylor Machine engineer working at a computer workstation" loading="lazy"></div>
 <div class="photo-item reveal"><img src="taylormachine2.webp" alt="Finished precision-machined product at Taylor Machine INC" loading="lazy"></div>
@@ -407,24 +408,24 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <div class="about-grid">
 <div class="about-text">
 <div class="section-label reveal">About</div>
-<div class="section-title reveal">Visuals that captivate and connect</div>
+<h2 class="section-title reveal">Visuals that captivate and connect</h2>
 <p class="reveal">I'm a storyteller, videographer, and photographer creating story-driven work for brands with something worth showing.</p>
 <p class="reveal">Based in Denver, Colorado, with years of experience across commercial production and creative storytelling. Specializing in industries where precision and visual impact matter most.</p>
 <div class="services-list">
 <div class="service-item reveal">
-<h4>Storytelling</h4>
+<h3>Storytelling</h3>
 <p>Narrative-driven content from concept to delivery</p>
 </div>
 <div class="service-item reveal">
-<h4>Videography</h4>
+<h3>Videography</h3>
 <p>Cinematic video production and direction</p>
 </div>
 <div class="service-item reveal">
-<h4>Photography</h4>
+<h3>Photography</h3>
 <p>Commercial and brand photography</p>
 </div>
 <div class="service-item reveal">
-<h4>Post-production</h4>
+<h3>Post-production</h3>
 <p>Editing, color grading, and finishing</p>
 </div>
 </div>
@@ -433,25 +434,25 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <div class="about-profile reveal">
 <div class="about-avatar"><img src="alex-spence.jpg" alt="Alex Spence, storyteller, videographer, and photographer" width="320" height="320" loading="lazy"></div>
 <div>
-<h4>Alex Spence</h4>
+<h3>Alex Spence</h3>
 <p class="about-roles"><span>Storyteller</span><span class="sep" aria-hidden="true"> | </span><span>Videographer</span><span class="sep" aria-hidden="true"> | </span><span>Photographer</span></p>
 </div>
 </div>
 <div class="stat-grid reveal">
 <div class="stat-card">
-<h5>6+</h5>
+<div class="stat-value">6+</div>
 <p>Years</p>
 </div>
 <div class="stat-card">
-<h5>100+</h5>
+<div class="stat-value">100+</div>
 <p>Projects</p>
 </div>
 <div class="stat-card">
-<h5 class="stat-word">Nationwide</h5>
+<div class="stat-value stat-word">Nationwide</div>
 <p>Travel ready</p>
 </div>
 <div class="stat-card">
-<h5 class="stat-word">Denver</h5>
+<div class="stat-value stat-word">Denver</div>
 <p>Colorado</p>
 </div>
 </div>
@@ -463,7 +464,7 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <div class="contact-grid">
 <div class="contact-info">
 <div class="section-label reveal">Contact</div>
-<div class="section-title reveal">Stories worth telling</div>
+<h2 class="section-title reveal">Stories worth telling</h2>
 <p class="reveal">Have a project in mind? Whether it's a facility tour, a product launch, or something entirely new — I'd love to hear about it.</p>
 <div class="contact-detail reveal">
 <label>Email</label>
@@ -493,9 +494,13 @@ footer{flex-direction:column;gap:24px;text-align:center}
 <label for="cf-type">Project type</label>
 <select id="cf-type" name="project-type">
 <option value="">Select a service</option>
-<option>Video Production</option>
-<option>Photo Production</option>
-<option>Both</option>
+<option>Facility tour</option>
+<option>Product launch</option>
+<option>Brand film</option>
+<option>Video production</option>
+<option>Photo production</option>
+<option>Video + photo</option>
+<option>Something else</option>
 </select>
 </div>
 <div class="form-group">
@@ -504,6 +509,7 @@ footer{flex-direction:column;gap:24px;text-align:center}
 </div>
 <input type="text" name="_gotcha" class="form-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 <button type="submit" class="submit-btn">SEND MESSAGE</button>
+<p class="form-note">I reply to every inquiry within one business day.</p>
 <p class="sr-only" id="formStatus" role="status" aria-live="polite"></p>
 </form>
 </div>
