@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-F2Ns8odzZ7pI2aGWzMUgCycgh7GU1Ie3howvhf24cY8=' 'sha256-zVHQ3pfgcOcwAduTH4FdrKMPedXfgKRbyEZnDk8me4o='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com; media-src 'self'; connect-src 'self' https://formspree.io; form-action https://formspree.io; base-uri 'self'; object-src 'none'; frame-src https://www.youtube-nocookie.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-F2Ns8odzZ7pI2aGWzMUgCycgh7GU1Ie3howvhf24cY8=' 'sha256-zVHQ3pfgcOcwAduTH4FdrKMPedXfgKRbyEZnDk8me4o=' https://www.googletagmanager.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com; media-src 'self'; connect-src 'self' https://formspree.io https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://cloudflareinsights.com; form-action https://formspree.io; base-uri 'self'; object-src 'none'; frame-src https://www.youtube-nocookie.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Denver Video &amp; Photo Production — Human Stories | Alex Spence</title>
 <meta name="description" content="Cinematic video and photography about the people behind the work.">
@@ -696,5 +696,6 @@ document.getElementById('cookieDecline').addEventListener('click',function(){loc
 })();
 </script>
 
+<!-- Cloudflare Web Analytics (cookieless, runs without consent) --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce50a8de38814c989a56d1e223cd6e38"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
